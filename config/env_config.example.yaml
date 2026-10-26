@@ -1,0 +1,47 @@
+# Parametry środowiska CoppeliaSteppingRobotGymEnv.
+# Wartości użyte w pracy nie są publikowane. Skopiuj ten plik jako
+# config/env_config.yaml i uzupełnij wszystkie pola (null = brak wartości).
+
+episode:
+  max_steps: null                     # maksymalna liczba kroków sterowania w epizodzie
+  goal_x: null                        # [m] pozycja X korpusu kończąca epizod sukcesem
+
+joints:
+  front_hip_range_deg: [null, null]   # [min, max] zakres przednich bioder
+  back_hip_range_deg: [null, null]    # [min, max] zakres tylnych bioder
+  knee_range_deg: [null, null]        # [min, max] zakres kolan
+  max_hip_velocity_deg: null          # [deg/s]
+  max_knee_velocity_deg: null         # [deg/s]
+  max_abs_tilt_deg: null              # zakres normalizacji roll/pitch/yaw do [-1, 1]
+
+reward:
+  velocity_weight: null               # nagroda za prędkość w osi X
+  backward_velocity_multiplier: null  # dodatkowy mnożnik dla ruchu do tyłu
+  min_height: null                    # [m] poniżej tej wysokości korpusu naliczana jest kara
+  height_weight: null
+  roll_tolerance_deg: null            # przechył bez kary
+  pitch_tolerance_deg: null
+  pitch_excess_scale: null
+  rotation_weight: null
+  parallel_legs_weight: null          # kara za równoległy ruch bioder pary nóg
+  front_legs_parallel_scale: null
+  action_regularisation_weight: null  # kara za zmianę akcji między krokami
+  alive_reward: null
+
+termination:
+  max_roll_deg: null
+  roll_penalty: null
+  max_yaw_deg: null
+  yaw_penalty: null
+  goal_bonus: null
+
+curriculum:
+  episodes_per_increase: null         # liczone osobno dla każdej instancji środowiska
+  increment: null
+  max_weight: null
+
+randomization:
+  joint_noise_deg: [null, null]       # [base, gain]: max = base + gain * curriculum_weight
+  base_tilt_deg: [null, null]         # [base, gain]: losowy roll/pitch korpusu na starcie
+  imu_bias_std_deg: null              # bias IMU stały w obrębie epizodu
+  imu_noise_std_deg: null             # szum IMU w każdym kroku

@@ -1,0 +1,14 @@
+# Prywatna konfiguracja środowiska (wagi nagrody itp.) - publikowany jest tylko szablon
+config/env_config.yaml
+
+# Wyniki treningu
+trained_models/
+training_logs/
+*.zip
+*.onnx
+*.mp4
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
