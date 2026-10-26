@@ -3,7 +3,7 @@
 Demo extract from my master's thesis (Warsaw University of Technology). A small 8-DOF quadruped robot (hip + knee per leg) learns to walk in the CoppeliaSim simulator, and the trained policy then runs
 on the real robot's Raspberry Pi Pico.
 
-📄 **Full thesis (PDF, in Polish):** [Witold_Pietron_Praca_Magisterska.pdf](Witold_Pietron_Praca_Magisterska.pdf)
+📄 **Full thesis (PDF, in Polish):** [Witold_Pietron_Praca_Magisterska.pdf](Witold_Pietron_Praca_Magisterska_compressed.pdf)
 
 ## What's inside
 
